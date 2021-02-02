@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FBF9558D25C9EAE000E8662E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9558C25C9EAE000E8662E /* main.swift */; };
+		FBF9559525C9EB5900E8662E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9559425C9EB5900E8662E /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		FBF9558925C9EAE000E8662E /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF9558C25C9EAE000E8662E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FBF9559425C9EB5900E8662E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		FBF9558025C9EAE000E8662E = {
 			isa = PBXGroup;
 			children = (
+				FBF9559425C9EB5900E8662E /* Extension.swift */,
 				FBF9558B25C9EAE000E8662E /* TemperatureConverter */,
 				FBF9558A25C9EAE000E8662E /* Products */,
 			);
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF9558D25C9EAE000E8662E /* main.swift in Sources */,
+				FBF9559525C9EB5900E8662E /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
