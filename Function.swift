@@ -14,3 +14,7 @@ func celsiusToFahrenheit (celsius: Double) -> Double {
 func fahrenheittoCelsius (fahrenheit: Double) -> Double {
     return (fahrenheit - 32) * 5/9
 }
+
+func celsiusToKelvin(celsius: Double) -> Double {
+    return celsius + 273.15
+}

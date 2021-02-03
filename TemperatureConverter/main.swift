@@ -14,7 +14,11 @@ print("This is the Temprature Converter")
 print("Which one you want to convert")
 print("1: Celsius to Fahrenheit.")
 print("2: Fahrenheit to Celsius.")
-let choise = String.collectInput(withPrompt: "Please enter your choise: ", acceptableValues: ["1", "2"])
+print("3: Celsius to Kelvin")
+print("4: Fahrenheit to Kelvin")
+print("5: Kelvin to Celsius")
+print("6: Kelvin to Fahrenheit")
+let choise = String.collectInput(withPrompt: "Please enter your choise: ", acceptableValues: ["1", "2", "3", "4", "5", "6"])
 print("")
 
 
@@ -25,6 +29,7 @@ case "1":
     
     let result = celsiusToFahrenheit(celsius: number)
     print("It's \(result)°F")
+    
 case "2":
     print("You have sellect Fahrenheit to Celsius")
     let number = Double.collectInput(withPrompt: "Please enter your number for Fahrenheit: ", minimum: nil, maximum: nil)
@@ -32,6 +37,11 @@ case "2":
     let result = fahrenheittoCelsius(fahrenheit: number)
     print("It's \(result)°C")
     
+case "3":
+    print("You have sellect Celsius to Kelvin.")
+    let number = Double.collectInput(withPrompt: "Please enter your number for Celsius: ", minimum: nil, maximum: nil)
+    let result = celsiusToKelvin(celsisu: number)
+    print("It's \(result)K")
 default:
     print("Please enter again")
 }
