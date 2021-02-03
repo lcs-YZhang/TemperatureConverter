@@ -17,26 +17,17 @@ print("2: Fahrenheit to Celsius.")
 let choise = String.collectInput(withPrompt: "Please enter your choise: ", acceptableValues: ["1", "2"])
 print("")
 
-func celsiusToFahrenheit (celsius: Double) -> Double {
-    return celsius * 9/5 + 32
-}
-
-func fahrenheittoCelsius (fahrenheit: Double) -> Double {
-    return (fahrenheit - 32) * 9/5
-}
 
 switch choise {
 case "1":
     print("You have sellect Celsius to Fahrenheit")
-    print("Please enter you number for Celsius")
-    let number = Double(readLine()!)!
+    let number = Double.collectInput(withPrompt: "Please enter your number for Celsius: ", minimum: nil, maximum: nil)
     
     let result = celsiusToFahrenheit(celsius: number)
     print("It's \(result)°F")
 case "2":
     print("You have sellect Fahrenheit to Celsius")
-    print("Please enter you number for Fahrenheit")
-    let number = Double(readLine()!)!
+    let number = Double.collectInput(withPrompt: "Please enter your number for Fahrenheit: ", minimum: nil, maximum: nil)
     
     let result = fahrenheittoCelsius(fahrenheit: number)
     print("It's \(result)°C")

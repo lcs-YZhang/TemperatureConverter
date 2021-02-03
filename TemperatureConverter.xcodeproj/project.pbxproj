@@ -9,10 +9,23 @@
 /* Begin PBXBuildFile section */
 		FBF9558D25C9EAE000E8662E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9558C25C9EAE000E8662E /* main.swift */; };
 		FBF9559525C9EB5900E8662E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9559425C9EB5900E8662E /* Extension.swift */; };
+		FBF9559825CB0C2F00E8662E /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9559725CB0C2F00E8662E /* Function.swift */; };
+		FBF955A125CB0CFF00E8662E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF955A025CB0CFF00E8662E /* main.swift */; };
+		FBF955A725CB0D1B00E8662E /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9559725CB0C2F00E8662E /* Function.swift */; };
+		FBF955AA25CB0D1D00E8662E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF9559425C9EB5900E8662E /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FBF9558725C9EAE000E8662E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FBF9559C25CB0CFF00E8662E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,10 +40,20 @@
 		FBF9558925C9EAE000E8662E /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF9558C25C9EAE000E8662E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FBF9559425C9EB5900E8662E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FBF9559725CB0C2F00E8662E /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		FBF9559E25CB0CFF00E8662E /* time converter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "time converter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF955A025CB0CFF00E8662E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FBF9558625C9EAE000E8662E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF9559B25CB0CFF00E8662E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,8 +66,10 @@
 		FBF9558025C9EAE000E8662E = {
 			isa = PBXGroup;
 			children = (
+				FBF9559725CB0C2F00E8662E /* Function.swift */,
 				FBF9559425C9EB5900E8662E /* Extension.swift */,
 				FBF9558B25C9EAE000E8662E /* TemperatureConverter */,
+				FBF9559F25CB0CFF00E8662E /* time converter */,
 				FBF9558A25C9EAE000E8662E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF9558925C9EAE000E8662E /* TemperatureConverter */,
+				FBF9559E25CB0CFF00E8662E /* time converter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +89,14 @@
 				FBF9558C25C9EAE000E8662E /* main.swift */,
 			);
 			path = TemperatureConverter;
+			sourceTree = "<group>";
+		};
+		FBF9559F25CB0CFF00E8662E /* time converter */ = {
+			isa = PBXGroup;
+			children = (
+				FBF955A025CB0CFF00E8662E /* main.swift */,
+			);
+			path = "time converter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +119,23 @@
 			productReference = FBF9558925C9EAE000E8662E /* TemperatureConverter */;
 			productType = "com.apple.product-type.tool";
 		};
+		FBF9559D25CB0CFF00E8662E /* time converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF955A225CB0CFF00E8662E /* Build configuration list for PBXNativeTarget "time converter" */;
+			buildPhases = (
+				FBF9559A25CB0CFF00E8662E /* Sources */,
+				FBF9559B25CB0CFF00E8662E /* Frameworks */,
+				FBF9559C25CB0CFF00E8662E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "time converter";
+			productName = "time converter";
+			productReference = FBF9559E25CB0CFF00E8662E /* time converter */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +146,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					FBF9558825C9EAE000E8662E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					FBF9559D25CB0CFF00E8662E = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				FBF9558825C9EAE000E8662E /* TemperatureConverter */,
+				FBF9559D25CB0CFF00E8662E /* time converter */,
 			);
 		};
 /* End PBXProject section */
@@ -122,8 +177,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF9559825CB0C2F00E8662E /* Function.swift in Sources */,
 				FBF9558D25C9EAE000E8662E /* main.swift in Sources */,
 				FBF9559525C9EB5900E8662E /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF9559A25CB0CFF00E8662E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF955A125CB0CFF00E8662E /* main.swift in Sources */,
+				FBF955A725CB0D1B00E8662E /* Function.swift in Sources */,
+				FBF955AA25CB0D1D00E8662E /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +333,28 @@
 			};
 			name = Release;
 		};
+		FBF955A325CB0CFF00E8662E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVTMGC7XMB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBF955A425CB0CFF00E8662E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MVTMGC7XMB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +372,15 @@
 			buildConfigurations = (
 				FBF9559125C9EAE000E8662E /* Debug */,
 				FBF9559225C9EAE000E8662E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF955A225CB0CFF00E8662E /* Build configuration list for PBXNativeTarget "time converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF955A325CB0CFF00E8662E /* Debug */,
+				FBF955A425CB0CFF00E8662E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
