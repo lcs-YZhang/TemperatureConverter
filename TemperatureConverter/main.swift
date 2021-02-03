@@ -14,15 +14,15 @@ print("This is the Temprature Converter")
 print("Which one you want to convert")
 print("1: Celsius to Fahrenheit.")
 print("2: Fahrenheit to Celsius.")
-print("Please enter your choise: ")
-let choise = readLine()!
+let choise = String.collectInput(withPrompt: "Please enter your choise: ", acceptableValues: ["1", "2"])
+print("")
 
 func celsiusToFahrenheit (celsius: Double) -> Double {
     return celsius * 9/5 + 32
 }
 
 func fahrenheittoCelsius (fahrenheit: Double) -> Double {
-    return (fahrenheit - 32) / 9/5
+    return (fahrenheit - 32) * 9/5
 }
 
 switch choise {
