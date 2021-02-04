@@ -19,10 +19,6 @@ func celsiusToKelvin(celsius: Double) -> Double {
     return celsius + 273.15
 }
 
-func fahrenheitToKelvin(fahrenheit: Double) -> Double {
-    return fahrenheit - 273.15
-}
-
 func fehtrenheitToKelvin(fehrenheit: Double) -> Double {
     return (fehrenheit - 32) * 5/9 + 273.15
 }
@@ -33,4 +29,7 @@ func kelvinToCelsius(kelvin: Double) -> Double {
 
 func kelvinToFehtrenheit(kelvin: Double) -> Double {
     return (kelvin - 273.15) * 9/5 + 32
+}
+func minToHour(min: Double) -> Double {
+    return min / 60
 }
