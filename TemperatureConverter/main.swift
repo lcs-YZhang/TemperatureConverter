@@ -40,8 +40,27 @@ case "2":
 case "3":
     print("You have sellect Celsius to Kelvin.")
     let number = Double.collectInput(withPrompt: "Please enter your number for Celsius: ", minimum: nil, maximum: nil)
-    let result = celsiusToKelvin(celsisu: number)
+    let result = celsiusToKelvin(celsius: number)
     print("It's \(result)K")
+    
+case "4":
+    print("You have sellect Fehrenheit to Kelvin.")
+    let number = Double.collectInput(withPrompt: "Please enter your number for Fehrenheit: ", minimum: nil, maximum: nil)
+    
+    let result = fehtrenheitToKelvin(fehrenheit: number)
+    print("It's \(result)K")
+    
+case "5":
+    print("You have sellect Kelvin to Celsius.")
+    let number = Double.collectInput(withPrompt: "Please enter your number for Kelvin: ", minimum: nil, maximum: nil)
+    let result = kelvinToCelsius(kelvin: number)
+    print("It's \(result)°C")
+    
+case "6":
+    print("You have sellect Kelvin to fehtrenheit.")
+    let number = Double.collectInput(withPrompt: "Please enter your number for Kelvin: ", minimum: nil, maximum: nil)
+    let result = kelvinToFehtrenheit(kelvin: number)
+    print("It's \(result)°F")
 default:
     print("Please enter again")
 }
