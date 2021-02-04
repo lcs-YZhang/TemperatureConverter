@@ -33,3 +33,7 @@ func kelvinToFehtrenheit(kelvin: Double) -> Double {
 func minToHour(min: Double) -> Double {
     return min / 60
 }
+
+func hourToMin(hour: Double) -> Double {
+    return hour * 60
+}

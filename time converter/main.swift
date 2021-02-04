@@ -22,6 +22,14 @@ case "1":
     let result = minToHour(min: number)
     
     print("The result is \(result)h")
+    
+case "2":
+    print("You have sellect hour to minute")
+    let number = Double.collectInput(withPrompt: "Please enter your number for hour: ", minimum: nil, maximum: nil)
+    
+    let result = hourToMin(hour: number)
+    print("The result is \(result)min")
+    
 default:
     print("Please enter a valid number")
 }
